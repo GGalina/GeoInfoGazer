@@ -7,29 +7,70 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #F2f1ef;
   color: #212121;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(216, 207, 208, 0.7);
+  min-height: 100vh;
+}
+
+.header {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 34px;
+  color: #697184;
+  background-color: #b1a6a4;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accent {
+  color: #d8cfd0;
+}
+
+.descr {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 28px;
+  color: #413f3d;
 }
 
 #search-box {
   font: inherit;
+  font-size: 18px;
   padding: 8px;
-  max-width: 320px;
+  border: 1px solid #697184;
+  border-radius: 5px;
+  min-width: 320px;
   margin-bottom: 16px;
 }
 
 #search-box:focus {
-  border: 2px solid blue;
+  border: 2px solid #697184;
   outline: none;
   box-shadow: 0 0 10px #719ECE;
 }
 
 .country-list {
   list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .country-name-list {
@@ -37,6 +78,11 @@ body {
   font-weight: 600;
 }
 
+.country-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .country-item {
   display: flex;
   align-items: center;
@@ -47,6 +93,8 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .country-name {
@@ -62,10 +110,12 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 10px;
+  text-align: left;
+  padding-left: 40px;
 }
 
 .info-descr {
   font-size: 24px;
   font-weight: 500;
-  color: gray;
+  color: #413f3d;
 }
